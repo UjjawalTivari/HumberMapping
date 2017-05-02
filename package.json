@@ -1,0 +1,40 @@
+{
+  "name": "mynewapp",
+  "version": "1.0.0",
+  "description": "Project for testing material UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --require ./test/helpers.js --require ./test/dom.js --recursive",
+    "tdd": "npm test -- --watch",
+    "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist",
+    "start": "npm run build",
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 12345"
+  },
+  "author": "Preet",
+  "license": "ISC",
+  "dependencies": {
+    "material-ui": "^0.17.0",
+    "nock": "^9.0.13",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-if": "^2.1.0",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.8.0",
+    "file-loader": "^0.10.1",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0",
+    "react-addons-test-utils": "^15.5.1",
+    "sinon": "^2.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}

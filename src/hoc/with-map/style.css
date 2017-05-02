@@ -1,0 +1,26 @@
+.map > canvas {
+  top: initial !important;
+}
+
+.destination-popout {
+  padding: 0 10px 5px;
+}
+
+.destination-popout h6 {
+  font-weight: normal;
+  margin: 5px 0 10px;
+}
+
+.destination-popout > img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.amenities {
+  position: relative;
+  top: 10px;
+  float: right;
+  right: 10px;
+  z-index: 9999;
+}
